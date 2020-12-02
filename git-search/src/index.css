@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 23px;
+  font-family: 'Montserrat', sans-serif;
+  background: #F8FAFB;
+  --title-primary: #000000;
+  --title-secondary: #162668;
+  --text-primary: #263238;
+  --text-secondary: #747474;
+  --button-primary: #344FA5;
+  --button-secondary: #6FCF97;
+}
+
+

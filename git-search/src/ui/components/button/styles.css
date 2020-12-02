@@ -1,0 +1,35 @@
+.button {
+    color: white;
+    padding: 14px 15px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    outline: inherit;
+    width: 100%;
+    max-width: 200px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 22px;
+}
+
+.left-button {
+    margin-right: 20px ;
+}
+
+.primary {
+    background: var(--button-primary);
+}
+
+.primary:hover {
+    opacity: 0.8;
+}
+
+.secondary {
+    background: var(--button-secondary);
+}
+
+.secondary:hover {
+    opacity: 0.8;
+}
