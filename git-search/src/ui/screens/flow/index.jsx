@@ -1,9 +1,9 @@
 import React from 'react'
-
 const FlowScreen = () => {
+
     return (
-        <div>
-            oi flow
+        <div className="container">
+        oi
         </div>
     )
 }

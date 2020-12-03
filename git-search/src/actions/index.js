@@ -1,6 +1,11 @@
-import { CLICK_UPDATE_VALUE } from './actionTypes';
+import { UPDATE_SEARCH_USER, UPDATE_TITLE } from './actionTypes';
 
-export const clickButton = value => ({
-    type: CLICK_UPDATE_VALUE,
-    newValue: value
+export const searchUser = value => ({
+    type: UPDATE_SEARCH_USER,
+    temporaryUser: value
+})
+
+export const changeName = value => ({
+    type: UPDATE_TITLE,
+    newTitle: value
 })

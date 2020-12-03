@@ -9,7 +9,6 @@ html, body, #root {
 
 body {
   margin: 0;
-  padding: 23px;
   font-family: 'Montserrat', sans-serif;
   background: #F8FAFB;
   --title-primary: #000000;
@@ -18,6 +17,14 @@ body {
   --text-secondary: #747474;
   --button-primary: #344FA5;
   --button-secondary: #6FCF97;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0px 23px;
+  justify-content: center;
 }
 
 

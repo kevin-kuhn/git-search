@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { HomeScreen, FlowScreen } from './ui/screens'
+import { Header } from './ui/components'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         <HomeScreen />
       </Route>
       <Route path="/flow" exact>
+        <Header />
         <FlowScreen />
       </Route>
     </Switch>

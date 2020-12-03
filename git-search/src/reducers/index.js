@@ -1,6 +1,8 @@
-import { clickReducer } from './clickReducer';
-import { combineReducers } from 'redux';
+import { searchReducer } from './searchReducer'
+import { titleReducer } from './titleReducer'
+import { combineReducers } from 'redux'
 
 export const Reducers = combineReducers({
-  clickState: clickReducer
+  searchState: searchReducer,
+  titleState: titleReducer
 });

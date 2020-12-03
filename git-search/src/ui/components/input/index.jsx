@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './styles.css'
 
-const Input = ({ 
+const Input = ({
     placeholder = 'Pesquisar...',
     onChange,
-    withIcon
+    withIcon,
+    newValue = ''
 }) => {
-    const handleOnChange = event => onChange?.(event.target.value)
+    const [value, setValue] = useState(newValue)
+
+    useEffect(() => setValue(newValue), [newValue])
+
+    const handleOnChange = event => {
+        setValue(event.target.value)
+        onChange?.(event.target.value)
+    }
 
     const renderInputWithIcon = () =>
         <div></div>
 
-    const renderInput = () => <input placeholder={placeholder} onChange={handleOnChange} className='input'/>
+    const renderInput = () => 
+        <input placeholder={placeholder} onChange={handleOnChange} value={value} className='input' />
 
     return !!withIcon ? renderInputWithIcon() : renderInput()
 }
