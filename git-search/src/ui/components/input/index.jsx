@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
+import { ReactComponent as Magnifier } from '../../../assets/svg/magnifier.svg'
 import './styles.css'
 
 const Input = ({
     placeholder = 'Pesquisar...',
     onChange,
     withIcon,
+    onBlur,
     newValue = ''
 }) => {
     const [value, setValue] = useState(newValue)
@@ -17,10 +19,15 @@ const Input = ({
     }
 
     const renderInputWithIcon = () =>
-        <div></div>
+        <div className="container-input ">
+            <div className="icon-container">
+                <Magnifier />
+            </div>
+            {renderInput()}
+        </div>
 
-    const renderInput = () => 
-        <input placeholder={placeholder} onChange={handleOnChange} value={value} className='input' />
+    const renderInput = () =>
+        <input placeholder={placeholder} onBlur={onBlur} onChange={handleOnChange} value={value} className={!!withIcon ? 'input-icon' : 'input'} />
 
     return !!withIcon ? renderInputWithIcon() : renderInput()
 }

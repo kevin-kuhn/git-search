@@ -1,7 +1,7 @@
 import { UPDATE_TITLE } from '../actions/actionTypes';
 
 const initialState = {
-    newTitle: 'OI'
+    newTitle: ''
 }
 
 export const titleReducer = (state = initialState, action) => {

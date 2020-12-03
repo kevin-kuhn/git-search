@@ -12,6 +12,36 @@
     outline: none;
 }
 
+.container-input {
+    display: flex;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    background: #FFFFFF;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+}
+
+.input-icon {
+    width: 85%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 36px;
+    color: #7A7A7A;
+    outline: none;
+    border: none;
+}
+
+.container-input:focus-within {
+    border: 1px solid black;
+}
+
 .input:focus {
     border: 1px solid black;
 }
