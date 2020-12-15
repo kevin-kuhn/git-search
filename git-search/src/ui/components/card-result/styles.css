@@ -1,32 +1,53 @@
 .card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 145px;
-    padding: 40px 10px 0px 10px;
-    border: 1px solid #DEDEDE;
-    text-align: center;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-all;
-    word-break: break-word;
-    hyphens: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 145px;
+  padding: 40px 10px 0px 10px;
+  border: 1px solid #dedede;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .avatar {
-    border-radius: 50px;
-    object-fit: scale-down;
-    width: 100px;
-    height: 100px;
+  border-radius: 50px;
+  object-fit: scale-down;
+  width: 100px;
+  height: 100px;
 }
 
 .container-avatar {
-    height: 50%;
-    width: 100%;
+  height: 50%;
+  width: 100%;
 }
 
 .name {
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--title-secondary);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--title-secondary);
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    width: 100%;
+    flex-direction: row;
+    border: none;
+    border-bottom: 1px solid #dedede;
+    padding: 10px 5px;
+  }
+  .container-avatar {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
 }

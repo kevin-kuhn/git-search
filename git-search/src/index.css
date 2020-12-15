@@ -21,15 +21,13 @@ body {
 
 .container {
   width: 100%;
-  height: calc(100% - 60px);
+  height: 100%;
   display: flex;
-  padding: 0px 23px;
   justify-content: center;
 }
 
-@media (max-width:768px) {
-  .container {
-    height: calc(100% - 50px);
+@media (max-width: 768px) {
+  html, body, #root {
+    height: fit-content;
   }
 }
-

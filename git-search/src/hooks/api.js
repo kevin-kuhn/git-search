@@ -7,9 +7,9 @@ export const useApi = () => {
         'https://api.github.com/search'
     )
 
-    const getUsers = async (user, page = 1) => {
+    const getUsers = async user => {
         try {
-            const response = await axios.get(`/users?q=${user}&per_page=10&page=${page}`)
+            const response = await axios.get(`/users?q=${user}&per_page=10`)
             return response.data
         } catch (error) {
             return error

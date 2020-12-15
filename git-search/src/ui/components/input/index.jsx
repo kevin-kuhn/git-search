@@ -18,6 +18,8 @@ const Input = ({
         onChange?.(event.target.value)
     }
 
+    const handleOnBlur = event => onBlur?.(event.target.value)
+    
     const renderInputWithIcon = () =>
         <div className="container-input ">
             <div className="icon-container">
@@ -27,7 +29,7 @@ const Input = ({
         </div>
 
     const renderInput = () =>
-        <input placeholder={placeholder} onBlur={onBlur} onChange={handleOnChange} value={value} className={!!withIcon ? 'input-icon' : 'input'} />
+        <input placeholder={placeholder} onBlur={handleOnBlur} onChange={handleOnChange} value={value} className={!!withIcon ? 'input-icon' : 'input'} />
 
     return !!withIcon ? renderInputWithIcon() : renderInput()
 }

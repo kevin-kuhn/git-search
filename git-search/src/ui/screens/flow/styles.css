@@ -1,5 +1,20 @@
 .flow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100% - 60px);
+}
+
+.container-geral {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .flow {
+    margin-top: 50px;
+    height: 100%;
+  }
 }

@@ -5,12 +5,12 @@ import './styles.css'
 const FlowScreen = () => {
 
     return (
-        <>
+        <div className="container-geral">
             <Header />
             <div className="container flow">
                 <SearchResults />
             </div>
-        </>
+        </div>
     )
 }
 

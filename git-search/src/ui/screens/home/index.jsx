@@ -32,7 +32,7 @@ const HomeScreen = ({ searchUser, temporaryUser }) => {
     const handleOnChange = value => setInputValue(value)
 
     return (
-        <div className='container'>
+        <div className='container home'>
             <div className='content-container'>
                 <Git />
                 <h1 className='title'>GitSearch</h1>
